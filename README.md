@@ -1,4 +1,132 @@
 # repocontainer
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vetrina Divani</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#">Vetrina Divani</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Prodotti</a></li>
+				<li><a href="#">Contatti</a></li>
+			</ul>
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="sofa-container">
+			<!-- qui inserisci il codice per i divani -->
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright © Vetrina Divani
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a {
+	color: #fff;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin: 0 10px;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger .line {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		top: 60px;
+		left: 0;
+	}
+
+	.nav-links li {
+		width: 100%;
+		text-align: center;
+		margin: 5px 0;
+	}
+
+	.burger {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	header {
+		position: relative;
+	}
+}
 
 
 <!DOCTYPE html>
